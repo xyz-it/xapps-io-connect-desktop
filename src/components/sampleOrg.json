@@ -1,0 +1,38 @@
+{
+  "type": "Company",
+  "content": "My RLC Project",
+  "children": [
+    {
+      "type": "CompanyCode",
+      "content": "My Knowledge Gap",
+      "children": [],
+      "duration": 3
+    },
+    {
+      "type": "CompanyCode",
+      "content": "My Activity",
+      "children": [
+        {
+          "type": "Plant",
+          "content": "My Key Decision",
+          "children": [],
+          "duration": 5
+        },
+        {
+          "type": "Plant",
+          "content": "My Second Activity",
+          "children": [],
+          "duration": 5
+        }
+      ],
+      "duration": 3
+    },
+    {
+      "type": "CompanyCode",
+      "content": "Gap #2",
+      "children": [],
+      "duration": 7
+    }
+  ],
+  "duration": 4
+}

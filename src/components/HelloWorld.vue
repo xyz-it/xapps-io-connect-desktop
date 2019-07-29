@@ -43,15 +43,28 @@
           .enter().append("line")
           .attr("stroke-width", d => Math.sqrt(d.value));
 
-  const node = svg.append("g")
-          .attr("stroke", "#fff")
-          .attr("stroke-width", 1.5)
-          .selectAll("circle")
-          .data(nodes)
-          .enter().append("circle")
-          .attr("r", 5)
+  const nodeEnter = svg.append("g")
+      .attr("stroke", "#fff")
+      .attr("stroke-width", 1.5)
+      .selectAll("circle")
+      .data(nodes)
+      .enter()
+
+  const node = nodeEnter.append("circle")
+          .attr("r", 10)
           .attr("fill", d => color(d.group))
           .call(layout.drag);
+
+
+  const text = nodeEnter.append("text")
+      .attr("dx", d => d.x)
+          .attr("dy", d => d.y)
+          .attr("text-anchor", "start")
+          .attr("fill","gray")
+          .attr("stroke", "#555")
+          .attr("stroke-opacity", 0.4)
+          .attr("stroke-width", 1.5)
+          .text("1");
 
   node.append("title")
           .text(d => d.id);
@@ -66,6 +79,10 @@
     node
             .attr("cx", d => d.x)
             .attr("cy", d => d.y);
+
+      text
+          .attr("dx", d => d.x)
+          .attr("dy", d => d.y);
   });
 
   // invalidation.then(() => layout.stop());
