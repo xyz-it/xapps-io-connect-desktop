@@ -22,7 +22,7 @@
     "vue-router": "^3.1.1",
     "vuetify": "^2.0.5",
     "webcola": "^3.4.0",
-    "xapps-io-core-api": "^1.0.18"
+    "xapps-io-core-api": "^1.0.25"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.10.1",
