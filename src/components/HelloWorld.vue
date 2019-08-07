@@ -6,8 +6,10 @@
   import * as d3 from 'd3';
   import * as xapps from 'xapps-io-core-api';
   import * as cola from 'webcola';
+  import { container } from 'xapps-io-core-api'
 
-  xapps.rfcQuery({queryTable: 'T005'}).subscribe(res => console.log(res.data));
+  console.log("container")
+  console.log(container)
 
   var data;
 
@@ -99,7 +101,10 @@
     }),
 
     mounted: () => {
-      d3.json("https://gist.githubusercontent.com/mbostock/4062045/raw/5916d145c8c048a6e3086915a6be464467391c62/miserables.json").then(
+        xapps.rfcQuery({queryTable: 'T880'}).subscribe(res => console.log(res.data));
+        xapps.ConsolidationCompany.getAll().subscribe(res => console.log(res));
+
+        d3.json("https://gist.githubusercontent.com/mbostock/4062045/raw/5916d145c8c048a6e3086915a6be464467391c62/miserables.json").then(
         res => {
           data = res;
           chart();

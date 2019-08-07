@@ -100,34 +100,21 @@
                         .attr("x", d => d._children ? -40 : 40)
                         .attr("text-anchor", d => d._children ? "end" : "start")
                         .attr("font-size","12")
-                        .text(d => d.data.type)
-                    // .clone(true).lower()
-                    // .attr("stroke-linejoin", "round")
-                    // .attr("stroke-width", 3)
-                    // .attr("stroke", "white");
+                        .text(d => d.data.type);
 
                     nodeEnter.append("text")
                         .attr("dy", "0em")
                         .attr("x", d => d._children ? -40 : 40)
                         .attr("text-anchor", d => d._children ? "end" : "start")
                         .attr("font-size","12")
-                        .text(d => d.data.content)
-                    // .clone(true).lower()
-                    // .attr("stroke-linejoin", "round")
-                    // .attr("stroke-width", 3)
-                    // .attr("stroke", "white");
+                        .text(d => d.data.content);
 
                     nodeEnter.append("text")
                         .attr("dy", "1.2em")
                         .attr("x", d => d._children ? -40 : 40)
                         .attr("text-anchor", d => d._children ? "end" : "start")
                         .attr("font-size","12")
-                        .text(d => "Duration: " + d.data.duration)
-                    // .clone(true).lower()
-                    // .attr("stroke-linejoin", "round")
-                    // .attr("stroke-width", 3)
-                    // .attr("stroke", "white")
-                    ;
+                        .text(d => "Duration: " + d.data.duration);
 
                     nodeEnter.append("text")
                         .attr("text-anchor", "middle")
