@@ -19,14 +19,14 @@
     "lodash": "^4.17.15",
     "reflect-metadata": "^0.1.13",
     "vue": "^2.6.10",
-    "vue-router": "^3.1.1",
+    "vue-router": "^3.1.2",
     "vuetify": "^2.0.5",
     "webcola": "^3.4.0",
-    "xapps-io-core-api": "^1.0.25"
+    "xapps-io-core-api": "^1.0.40"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.10.1",
-    "@mdi/font": "^3.9.96",
+    "@mdi/font": "^3.9.97",
     "@vue/cli-plugin-babel": "^3.10.0",
     "@vue/cli-plugin-eslint": "^3.10.0",
     "@vue/cli-service": "^3.10.0",

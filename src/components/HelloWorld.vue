@@ -101,8 +101,12 @@
     }),
 
     mounted: () => {
-        xapps.rfcQuery({queryTable: 'T880'}).subscribe(res => console.log(res.data));
-        xapps.ConsolidationCompany.getAll().subscribe(res => console.log(res));
+        // xapps.rfcQuery({queryTable: 'T880'}).subscribe(res => console.log(res.data));
+        // xapps.ConsolidationCompany.getAll().then(res => console.log(res));
+        xapps.ConsolidationCompany.getAll2().then(res => console.log(res));
+        xapps.Company.getAll2().then(res => console.log(res));
+        xapps.ControllingArea.getAll2().then(res => console.log(res));
+        xapps.CreditControlArea.getAll2().then(res => console.log(res));
 
         d3.json("https://gist.githubusercontent.com/mbostock/4062045/raw/5916d145c8c048a6e3086915a6be464467391c62/miserables.json").then(
         res => {
