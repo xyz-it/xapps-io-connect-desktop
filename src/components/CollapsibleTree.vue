@@ -21,7 +21,7 @@
                 const margin = ({top: 120, right: 200, bottom: 120, left: 200});
                 const width = 1200;
                 let dy = width / 4;
-                let dx = dx = 120;
+                let dx = 120;
                 const tree = d3.tree().nodeSize([dx, dy]);
                 const diagonal = d3.linkHorizontal().x(d => d.y).y(d => d.x);
 

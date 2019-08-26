@@ -2,6 +2,7 @@
 node_modules
 /dist
 /dist_electron
+/src/xapps.private.ts
 
 # local env files
 .env.local
